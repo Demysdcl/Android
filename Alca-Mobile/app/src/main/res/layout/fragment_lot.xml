@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_fragment_top_margin"
+    android:background="@color/colorMain"
+    tools:context="mobilesearch.com.br.alca_mobile.LotFragment">
+
+    <LinearLayout
+        android:id="@+id/lot_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMain"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msg_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/form_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="SKU"
+            android:textSize="@dimen/form_text_size" />
+
+        <Spinner
+            android:id="@+id/sp_sku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linha"
+            android:textSize="@dimen/form_text_size" />
+
+        <Spinner
+            android:id="@+id/sp_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ordem de Produção"
+            android:textSize="@dimen/form_text_size" />
+
+        <Spinner
+            android:id="@+id/sp_op"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caixa Coletiva"
+            android:textSize="@dimen/form_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/form_text_size" />
+
+            <ImageButton
+                android:id="@+id/scan_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/bar_code_scanner" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lote:  "
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:id="@+id/tv_lot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantid. da OP:  "
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:id="@+id/tv_qty_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produzido na OP: "
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:id="@+id/tv_prod_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantid. do Lote:       "
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:id="@+id/tv_qty_lot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produzido no Lote: "
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:id="@+id/tv_prod_lot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Últ. Código Escan.: "
+                android:textSize="@dimen/form_text_size" />
+
+            <TextView
+                android:id="@+id/tv_last_grp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/form_text_size" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

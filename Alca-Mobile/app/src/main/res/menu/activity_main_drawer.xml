@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_global"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_lot"
+            android:icon="@drawable/ic_menu_grid"
+
+            android:title="Criar Lote" />
+        <item
+            android:id="@+id/nav_inspection"
+            android:icon="@drawable/ic_menu_visibility"
+            android:title="OQC Inspeção" />
+        <item
+            android:id="@+id/nav_repair"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Conserto Técnico" />
+        <item
+            android:id="@+id/nav_defect"
+            android:icon="@drawable/ic_menu_bug"
+            android:title="Defeitos" />
+    </group>
+
+</menu>
